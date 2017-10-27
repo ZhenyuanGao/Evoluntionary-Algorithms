@@ -26,7 +26,7 @@ class Individual {
         return genetic_makeup;
     }
 
-    // Todo: you might wanna fix the math. 
+    // Todo: you might wanna fix the math.
     private double set_fitness_level_per_individual(){
         fitness_level =  Collections.frequency(getGenetic_makeup_list(), "1");
         return fitness_level / 8.0;
