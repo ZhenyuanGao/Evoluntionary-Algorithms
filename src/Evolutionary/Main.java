@@ -5,7 +5,6 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        /*
         Population population1 = new Population(1);
         System.out.println(population1.getIndividuals());
         for (Individual x : population1.getIndividuals()){
@@ -13,8 +12,6 @@ public class Main {
             System.out.println(x.getGenetic_makeup_list());
             System.out.println(x.getFitness_level());
         }
-        */
-       System.out.println( new Random().nextInt(3));
 
     }
 }

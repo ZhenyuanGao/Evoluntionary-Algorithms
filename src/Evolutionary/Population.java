@@ -16,6 +16,7 @@ class Population {
     LinkedList<Individual> getIndividuals(){
         return individualLinkedList;
     }
+
      Individual survive(int number_of_individuals){
          LinkedList<Individual> survive = new LinkedList<>();
          LinkedList<Double> best_fitness_level = new LinkedList<>();
@@ -25,8 +26,8 @@ class Population {
              survive.add(getIndividuals().get(rn));
              best_fitness_level.add((getIndividuals().get(rn).getFitness_level()));
          }
-         // Todo: number is going the index of the highest value in  best_fitness_level.
-         winner = survive.get(number);
+         // Todo: what if there are tIndividuals with the same fitness level.
+         winner = survive.get(best_fitness_level.indexOf(Collections.max(best_fitness_level)));
          getIndividuals().remove(winner);
         return winner;
     }
