@@ -16,7 +16,6 @@ class Individual {
     private int individual_id;
 
     /**
-     * @author Mo
      * This constructor is going to call all the methods that will create:
      * 1) id,
      * 2) genetic_makeup,

@@ -17,7 +17,6 @@ class Population {
      * Based on a given number this constructor is going to create Individual objects.
      * @param population_number take the number of Individual objects that you want to create.
      *
-     *
      **/
     Population(Integer population_number){
         while (population_number!=0){
@@ -35,7 +34,6 @@ class Population {
      * @return a list of all the Individuals objects that have survived(the most fit).
      **/
     LinkedList<Individual> getSurvivesLinkedList(){return survivesLinkedList;}
-
     /**
      * @param number_of_individuals is going to take the total number of random selected individuals
      * @param number_of_generations how many times do you want to do the process.
@@ -60,4 +58,6 @@ class Population {
             number_of_generations--;
         }
      }
+
+    // Todo: create a method that will do something with survivesLinkedList.
 }
