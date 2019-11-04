@@ -16,12 +16,15 @@ public class IndividualTest {
 
     @Test
     public void getIndividual_id() throws Exception {
-
+    	
     }
 
     @Test
     public void getGenetic_makeup_string() throws Exception {
-
+    	Individual indi = new Individual("00101110");
+    	assertEquals(indi.getGenMak(), "00101110");
+    	
+    	
     }
 
     @Test
